@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş_sayfası</title>
+
+
+    <style>
+        body {
+          background-image: url('images/hjk.jpeg');
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          font-family: sans-serif;
+        }
+        input, button {
+          margin: 10px;
+          padding: 10px;
+          border-radius: 8px;
+          border: none;
+          font-size: 1em;
+        }
+      </style>
+    
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body>
+    
+
+
+    <h2>Siteye Giriş</h2>
+    <input type="text" id="isim" placeholder="İsim">
+    <input type="text" id="soyisim" placeholder="Soyisim">
+    <input type="password" id="sifre" placeholder="Şifre">
+    <button onclick="girisYap()">Giriş Yap</button>
+  
+    <script>
+
+
+        // !!!GİRİŞ SAYFASINDAKİ FORM!!!
+      
+//         function girisYap() {
+//     const isim = document.getElementById("isim").value;
+//     const soyisim = document.getElementById("soyisim").value;
+//     const sifre = document.getElementById("sifre").value;
+
+//     if (isim && soyisim && sifre === "1234") {
+//       alert(`Hoş geldiniz, ${isim} ${soyisim}`);
+//       window.location.href = "yazılım.html";  
+//     } else {
+//       alert("Bilgiler eksik veya şifre yanlış!");
+//     }
+//   }
+
+
+function girisYap() {
+    const isim = document.getElementById("isim").value.trim();
+    const soyisim = document.getElementById("soyisim").value.trim();
+    const sifre = document.getElementById("sifre").value;
+
+    if (!isim || !soyisim || !sifre) {
+      alert("Lütfen tüm alanları doldurun.");
+    } else if (sifre !== "1234") {
+      alert("Şifre yanlış. Lütfen tekrar deneyin.");
+    } else {
+      alert(`Hoş geldiniz, ${isim} ${soyisim}`);
+      window.location.href = "yazılım.html";
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
