@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/borsa"
+    tools:ignore="ExtraText">
+<EditText
+
+        android:id="@+id/editAmount"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        android:hint="Tutar girin"
+        android:inputType="number"
+       android:textColor="#FFFFFF"
+       android:textColorHint="#FFFFFF"
+
+    />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:text="Gelir"
+            android:textColor="#FFFFFF"
+            />
+        <RadioButton
+
+            android:id="@+id/radioExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:text="Gider"
+            android:textColor="#FFFFFF"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ekle"
+        android:textColor="#000000" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="556dp"
+        android:layout_weight="1"
+        />
+    <TextView
+       android:id="@+id/totalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="Toplam: 0 ₺"
+       android:textSize="18sp"
+        android:textStyle="bold"/>
+      android:textColor="#FFFFFF"
+      android:gravity="center"
+
+        />
+
+</LinearLayout>
